@@ -31,7 +31,7 @@ sys.inherits(PythonRuntimePlugin, Plugin);
 
     this.command = function(user, message, client) {
         if (!(/py/.test(message.runner)))
-        return false;
+            return false;
 
         var _self = this;
 
