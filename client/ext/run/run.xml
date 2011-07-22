@@ -67,12 +67,13 @@
                 <a:textbox id="txtRunCfgName" flex="1" value="[@path]" disabled="{!lstRunCfg.selected}"/>
                 <a:button visible="false" icon="folder.png" disabled="true" tooltip="Browse ..."></a:button>
             </a:hbox>
-            <!--a:divider />
+            <a:divider />
             <a:hbox align="center" margin="5 10" padding="10">
                 <a:model id="mdlRunnerSelector">
                     <data>
-                        <element caption="JavaScript" value="js" />
+                        <element caption="JavaScript" value="node" />
                         <element caption="Python" value="py" />
+                        <element caption="Java" value="java" />
                     </data>
                 </a:model>
                 <a:label width="130" textalign="right">Runner</a:label>
@@ -86,7 +87,7 @@
                         <a:value match="[@value]" />
                     </a:each>
                 </a:dropdown>
-            </a:hbox-->
+            </a:hbox>
             <a:hbox align="center" margin="5 10" padding="10">
                 <a:label width="130" textalign="right">Command line arguments</a:label>
                 <a:textbox id="txtRunCfgName" flex="1" value="[@args]" disabled="{!lstRunCfg.selected}"/>

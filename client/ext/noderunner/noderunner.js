@@ -153,7 +153,7 @@ return ext.register("ext/noderunner/noderunner", {
         var command = {
             "command" : apf.isTrue(debug) ? "RunDebugBrk" : "Run",
             "file"    : path.replace(/^\/+/, ""),
-            "runner"  : "node", //ddRunnerSelector.value, // Explicit addition; trying to affect as less logic as possible for now...
+            "runner"  : ddRunnerSelector.value, // was "node" Explicit addition; trying to affect as less logic as possible for now...
             "args"    : args || "",
             "env"     : {
                 "C9_SELECTED_FILE": page ? page.getAttribute("path").slice(ide.davPrefix.length) : ""
@@ -173,7 +173,7 @@ return ext.register("ext/noderunner/noderunner", {
 
         ide.socket.send(JSON.stringify({
             "command": "kill",
-            "runner"  : "node" //ddRunnerSelector.value // Explicit addition; trying to affect as less logic as possible for now...
+            "runner"  : ddRunnerSelector.value // was "node" Explicit addition; trying to affect as less logic as possible for now...
         }));
     },
 
