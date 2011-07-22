@@ -1,0 +1,6 @@
+{
+    "name": "java_runtime",
+    "description": "Provides a Java runtime and debugger.",
+    "version": "0.1",
+    "author": "Ajax.org B.V. <info@ajax.org>"
+}
