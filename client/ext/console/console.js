@@ -485,6 +485,7 @@ return ext.register("ext/console/console", {
             case "pwd":
             case "hg":
             case "ls":
+            case "java":
                 res = message.body;
                 //this.getPrompt() + " " + res.argv.join(" ") + "\n" + 
                 if (res.out)

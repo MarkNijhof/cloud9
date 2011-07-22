@@ -96,7 +96,9 @@ var contentTypes = {
     
     "clj": "text/x-script.clojure",
     "ml": "text/x-script.ocaml",
-    "mli": "text/x-script.ocaml"
+    "mli": "text/x-script.ocaml",
+    
+    "java": "text/x-java-source"
 };
 
 return ext.register("ext/code/code", {
